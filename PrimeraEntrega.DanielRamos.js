@@ -10,3 +10,11 @@ function costo (producto,iva){
 
 alert("Elige un producto de la lista: 1.-productoUno 2.-productoDos 3.-productoTres")
 
+ let producto = prompt("Introduce el nombre")
+
+ if producto > 0 {
+
+ }
+if producto < 0 {
+
+}
