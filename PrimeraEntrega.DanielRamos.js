@@ -5,16 +5,22 @@ const iva = 1.16
 const total = 0
 
 function costo (producto,iva){
-    total = producto + iva
+    total = producto * iva
+   
 }
 
 alert("Elige un producto de la lista: 1.-productoUno 2.-productoDos 3.-productoTres")
 
  let producto = prompt("Introduce el nombre")
 
- if producto > 0 {
+ while producto > 0 {
 
+    if producto < 0 {
+        console.log("Introduce un producto valido")
+        continue
+    }
+    console.log(costo(producto,iva))
  }
-if producto < 0 {
+ 
 
-}
+
